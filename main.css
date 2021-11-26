@@ -80,7 +80,7 @@ body .box:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 280px;
+  margin-right: 200px;
   margin-top: 50px;
 }
 
@@ -89,6 +89,7 @@ body .box:hover {
 }
 
 .text-container {
+  margin-left: 170px;
   visibility: hidden;
   display: flex;
   justify-content: center;
