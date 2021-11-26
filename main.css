@@ -49,8 +49,9 @@ html {
 
 body .box {
   position: relative;
-  margin-left: 900px;
-  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
