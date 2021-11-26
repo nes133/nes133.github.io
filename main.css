@@ -21,8 +21,9 @@ html {
 }
 
 .sideimg h1 {
-  padding-top: 240px;
+  padding-top: 340px;
   padding-right: 10px;
+  font-size: 30px;
   font-family: 'Cormorant SC', sans-serif;
   letter-spacing: 10px;
 }
@@ -99,7 +100,6 @@ body .box:hover {
   height: 100px;
   background-color: white;
   position: relative;
-  margin-right: 60px;
   opacity: 0.8;
   animation: fadeInFromNone 1.2s ease forwards;
 }
