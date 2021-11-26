@@ -90,6 +90,8 @@ body .box:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 280px;
+  margin-top: 50px;
 }
 
 body .box:hover {
@@ -126,7 +128,7 @@ body .box:hover {
   margin-right: 50px;
 }
 
-.image:hover + .text-container {
+.centering:hover + .text-container {
   visibility: visible;
 }
 
