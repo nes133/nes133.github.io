@@ -14,9 +14,7 @@ html {
   float: left;
   max-width: 150px;
   background-color: white;
-  margin-top: -10px;
-  margin-left: -10px;
-  height: 100vh;
+  height: 100%;
   position: relative;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -24,7 +22,7 @@ html {
 
 .sideimg h1 {
   padding-top: 240px;
-  padding-right: 15px;
+  padding-right: 10px;
   font-family: 'Cormorant SC', sans-serif;
   letter-spacing: 10px;
 }
@@ -89,7 +87,7 @@ body .box:hover {
 }
 
 .text-container {
-  margin-left: 170px;
+  margin-left: 10px;
   visibility: hidden;
   display: flex;
   justify-content: center;
