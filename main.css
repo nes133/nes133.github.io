@@ -7,7 +7,6 @@ html {
   background: url(https://images.unsplash.com/photo-1560220291-a6165e58d691?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1633&q=80)
     no-repeat center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
 }
 
@@ -23,15 +22,6 @@ html {
   text-orientation: mixed;
 }
 
-.sideimgl {
-  max-width: 150px;
-  max-height: 150px;
-  margin-bottom: -10px;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 .sideimg h1 {
   padding-top: 240px;
   padding-right: 15px;
@@ -144,7 +134,7 @@ body .box:hover {
   margin-top: 190px;
   margin-left: -30px;
   width: 600px;
-  height: 250px;
+  height: 200px;
   font-size: 17px;
   background-color: white;
   opacity: 0.8;
@@ -165,12 +155,6 @@ body .box:hover {
 
 .text p {
   padding-left: 5px;
-}
-
-.text .btn {
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
 }
 
 @keyframes top-to-bottom {
