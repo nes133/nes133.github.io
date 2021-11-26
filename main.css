@@ -48,10 +48,6 @@ html {
 }
 
 body .box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -60,6 +56,7 @@ body .box {
   animation: rotate 1.5s linear infinite;
   z-index: -1;
 }
+
 body .box:before,
 body .box:after {
   content: ' ';
@@ -71,6 +68,7 @@ body .box:after {
   background: linear-gradient(#161616, #262626);
   border-radius: inherit;
 }
+
 body .box:before {
   background: linear-gradient(45deg, transparent, transparent 40%, yellow);
   filter: blur(12px);
@@ -83,11 +81,15 @@ body .box:before {
   }
 }
 
-img {
-  margin-left: 762px;
-  margin-top: -198px;
+.image img {
   z-index: 1;
   border-radius: 90px;
+}
+
+.wrapper .centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body .box:hover {
