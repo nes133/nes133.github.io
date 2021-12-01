@@ -21,7 +21,7 @@ html {
 }
 
 .sideimg h1 {
-  padding-top: 350px;
+  padding-top: 300px;
   padding-right: 10px;
   font-size: 30px;
   font-family: 'Cormorant SC', sans-serif;
@@ -36,40 +36,6 @@ html {
   letter-spacing: 2px;
 }
 
-body .box {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, transparent, transparent 40%, yellow),
-    linear-gradient(#262626, #141414);
-  animation: rotate 1.5s linear infinite;
-  z-index: -1;
-}
-
-body .box:before,
-body .box:after {
-  content: ' ';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  right: 4px;
-  bottom: 4px;
-  background: linear-gradient(#161616, #262626);
-  border-radius: inherit;
-}
-
-body .box:before {
-  background: linear-gradient(45deg, transparent, transparent 40%, yellow);
-  filter: blur(12px);
-}
-
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-    filter: hue-rotate(360deg);
-  }
-}
-
 .image img {
   z-index: 1;
   border-radius: 90px;
@@ -79,8 +45,9 @@ body .box:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 200px;
+  margin-left: 95px;
   margin-top: 50px;
+  z-index: 2;
 }
 
 body .box:hover {
@@ -88,7 +55,6 @@ body .box:hover {
 }
 
 .text-container {
-  margin-left: 10px;
   visibility: hidden;
   display: flex;
   justify-content: center;
@@ -155,6 +121,54 @@ body .box:hover {
 .text p {
   padding-left: 5px;
 }
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.contactName {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contactName input {
+  overflow: scroll;
+
+  width: 200px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: rgb(0, 0, 0, 0.5);
+}
+
+.contactEmail {
+  font-size: 18px;
+  border-width: 200px;
+}
+
+.contactEmail input {
+  width: 200px;
+  border-radius: 8px;
+  border-color: rgb(0, 0, 0, 0.5);
+}
+
+.button button {
+  margin-top: 9px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 161, 253, 0.9);
+  font-size: 14px;
+  width: 200px;
+  height: 35;
+}
+
+/* Animations */
 
 @keyframes top-to-bottom {
   0% {
