@@ -41,6 +41,12 @@ html {
   border-radius: 90px;
 }
 
+.headingAnimated {
+  animation: topToBottom 5s ease-in-out infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+
 .wrapper .centering {
   display: flex;
   justify-content: center;
@@ -123,6 +129,14 @@ body .box:hover {
 }
 
 /* Contact */
+.contactWrapper {
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 25px;
+  width: 250px;
+  height: 270px;
+  background-color: rgb(255, 255, 255, 0.4);
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -139,7 +153,6 @@ body .box:hover {
 
 .contactName input {
   overflow: scroll;
-
   width: 200px;
   height: 100px;
   border-radius: 8px;
@@ -168,6 +181,50 @@ body .box:hover {
   height: 35;
 }
 
+/* SM Icons*/
+.socialMediaIcons {
+  border-radius: 10px;
+  width: 310px;
+  height: 80px;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: relative;
+  float: right;
+  margin-top: 320px;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.fa {
+  border-radius: 50%;
+  margin-right: 40px;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  padding-top: 16;
+  float: right;
+}
+
+.fa:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  margin-right: 40px;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
 /* Animations */
 
 @keyframes top-to-bottom {
@@ -185,5 +242,15 @@ body .box:hover {
   }
   100% {
     opacity: 0.9;
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    top: -280px;
+  }
+
+  100% {
+    top: 8px;
   }
 }
