@@ -14,9 +14,9 @@
     <body>
       <div class="first-wrapper w-screen">
         <!-- nav-bar -->
-        <nav class="nav-left flex items-center py-4 mt-8 sm:mt12 ml-32">
+        <nav class="nav-left flex items-center py-4 ml-32">
                 <img src="./images/ihave.png" alt="logo"/>
-                <ul class="nav-center hidden sm:flex flex-1 justify-center items-center gap-12 mx-12 mt-8">
+                <ul class="nav-center hidden md:flex flex-1 justify-center items-center gap-12 mx-12 mt-8">
                     <li class="cursor-pointer"> POČETNA </li>
                     <li class="cursor-pointer"> PROIZVODI </li>
                     <li class="cursor-pointer"> RASPRODAJA </li>
@@ -31,20 +31,20 @@
         </nav>
 
         <!-- left panel -->
-        <div class="left-panel justify-start hidden sm:flex items-start flex-col absolute ml-32 mt-32">
-          <img src="images/Group 23.png" class="cursor-pointer my-4" alt="1st" />
-          <img src="images/Mask Group 4.png" class="cursor-pointer" alt="1st" />
-          <img src="images/Mask Group 3.png" class="cursor-pointer my-4" alt="1st" />
-          <img src="images/Mask Group 2.png" class="cursor-pointer" alt="1st" />
+        <div class="left-panel justify-start items-start flex-col absolute md:ml-32 ml-16 mt-32">
+          <img src="images/Group 23.png" class="cursor-pointer my-4 h-2/4 w-2/4 md:h-full md:w-full" alt="1st" />
+          <img src="images/Mask Group 4.png" class="cursor-pointer h-2/4 w-2/4 md:h-full md:w-full" alt="1st" />
+          <img src="images/Mask Group 3.png" class="cursor-pointer my-4 h-2/4 w-2/4 md:h-full md:w-full" alt="1st" />
+          <img src="images/Mask Group 2.png" class="cursor-pointer h-2/4 w-2/4 md:h-full md:w-full" alt="1st" />
         </div>
 
 
         <!-- shopping-cart -->
         <div class="flex font-sans mt-16">
             <div class="shopping-cart flex-none relative">
-              <img src="./images/Mask Group 6.png" alt="wifi headset" class="absolute inset-0 w-full h-full object-cover rounded-lg" />
+              <img src="./images/Mask Group 6.png" alt="wifi headset" class="absolute inset-0 w-2/4 h-2/4 md:w-full md:h-full mt-16 md:mt-0 -ml-32 md:ml-8 object-cover rounded-lg" />
             </div>
-            <div class="wrapper ml-44">
+            <div class="wrapper md:ml-44 w-2/5 md:w-full -ml-96">
             <form class="flex-auto p-6">
                 <div class="stars flex-auto">
                     <div class="flex items-center mt-2 mb-4">
@@ -64,7 +64,7 @@
                  <p>Large-size earmuffs that could cover the whole ears, paired with <br> thick, soft earmuffscan make it comfortable to immerse in music <br> for a long time.</p>
                   </div>
               </div>
-            <div class="flex flex-auto my-8">
+            <div class="flex flex-auto my-2 -ml-60 md:ml-0">
                 <div class="price flex-none mt-2 order-1">
                     41,99 KM
                 </div>
@@ -80,7 +80,7 @@
               </div>
             </div>
         </div>
-              <div class="flex space-x-4 mb-5 text-sm font-medium mt-4">
+              <div class="flex space-x-4 mb-5 text-sm font-medium mt-4 -ml-80 md:ml-0">
                 <div class="btn flex-auto flex space-x-4">
                   <button class="btn-bn mr-4 h-16 w-52 font-semibold rounded bg-orange-500 text-white" type="submit">
                     Kupi
@@ -90,7 +90,7 @@
                   </button>
                 </div>
               </div>
-              <div class="notes">
+              <div class="notes -ml-80 md:ml-0">
               <img src="images/user.svg" alt="icon" />
               <span class="text-sm text-gray-500">
                 Trenutno 18 osoba gleda ovaj proizvod. <br>
@@ -113,8 +113,8 @@
     </div>
 
       <!-- second-wrapper -->
-    <div class="second-wrapper w-full flex">
-      <div class="sw-heading ml-44 mt-72">
+    <div class="second-wrapper w-full flex flex-wrap">
+      <div class="sw-heading ml-20 md:ml-40 mt-72">
       <div class="text-list flex justify-start items-center">
         <h1 class="mr-36 cursor-pointer">OPIS</h1>
         <h1 class="cursor-pointer" >SPECIFIKACIJE</h1>
@@ -131,8 +131,8 @@
 
 
     <!-- third-wrapper-->
-    <div class="third-wrapper w-full flex flex-col justify-end items-end">
-      <div class="tw-full mr-80">
+    <div class="third-wrapper w-screen flex flex-wrap justify-end items-end">
+      <div class="tw-full ml-40 sm:ml-20 mr-4 sm:mr-10 lg:mr-80 lg:ml-0">
       <div class="tw-text">
           <h1 class="tw-text-h1 tracking mb-4">Iskoristiti momente uživanja,<br> na pravi način</h1>
           <p class="tw-text-p mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -153,7 +153,7 @@
   </div>
 
   <!-- fourth-wrapper-->
-  <div class="fourth-wrapper w-full">
+  <div class="fourth-wrapper w-screen">
     <div class="fw-text-wrapper flex flex-wrap justify-center items-center">
       <div class="fw-txt-wrapper">
         <h1 class="flex justify-center mt-32 mb-4">Povezani proizvodi</h1>
@@ -186,16 +186,16 @@
 
   <!-- fifth-wrapper -->
   <div class="fifth-wrapper">
-    <div class="fw-text-wrapper relative">
-      <div class="fw-txt-wrapper items-center pt-32 text-center">
+    <div class="fw-text-wrapper relative -ml-56 md:ml-0">
+      <div class="fw-txt-wrapper items-center pt-32 text-left ml-80 md:ml-0 md:text-center">
         <h1>Gdje želite da Vam </h1>
         <h1>dostavimo proizvod?!</h1>
       </div>
-      <div class="fw-lf-side mt-36 ml-72">
+      <div class="fw-lf-side mt-36 mr-96 ml-24 md:ml-72">
         <img src="./images/Mask Group 12.png" class="float-left" alt="headset" />
       </div>
-      <div class="fw-rht-side w-full mt-28">
-        <form class="fw-form flex flex-col w-96">
+      <div class="fw-rht-side w-full mt-28 ">
+        <form class="fw-form flex flex-col w-40 md:w-96">
         <label for="fname">Ime i prezime</label>
         <input type="text" class="h-12" id="fname" name="firstname" />
         <label for="street" class="mt-4">Ulica i broj</label>
@@ -209,9 +209,9 @@
         <label for="message" class="mt-4">Vasa poruka / dodatne informacije</label>
         <input type="message" class="h-40" id="msg" name="msg" />
       </form>
-      <div class="tw-btn flex-col mt-8">
+      <div class="tw-btn flex-col mt-8 md:ml-0 ml-20">
         <div class="flex space-x-4 mb-5 text-sm font-medium mt-4">
-          <div class="btn flex-auto flex space-x-4">
+          <div class="btn flex-auto flex space-x-4 ml-80 mt-10 md:mt-0 md:ml-0">
             <button class="btn-bn w-96 h-16 font-semibold rounded bg-orange-500 text-white" type="submit">
               Kupi
             </button>
@@ -231,7 +231,7 @@
   </div>
 
   <!-- sixth-wrapper -->
-  <div class="sixth-wrapper">
+  <div class="sixth-wrapper w-screen">
     <div class="sixth-wrapper-cols flex items-center pt-16">
     <div class="max-w-6xl m-auto flex flex-wrap justify-start">
       <div class="sw-fl pt-20 float-left p-8 ">
@@ -248,7 +248,7 @@
         </div>
         </div>
      </div>
-      <div class="sw-fr max-w-6xl m-auto flex flex-wrap justify-end mr-96">
+      <div class="sw-fr max-w-6xl m-auto flex flex-wrap justify-end mr-96 hidden md:visible">
          <div class="p-5 w-48 ">
         <div class="uppercase font-bold">O nama</div>
          <span class="my-3 block">Dostava <span class="p-1"></span></span>
@@ -273,9 +273,8 @@
       </div>
    </div>
   </div>
-  <div class="tribute pt-2 ">
-    <div class="flex pb-5 px-3 m-auto pt-5 border-t flex-col
-       md:flex-row max-w-6xl">
+  <div class="tribute pt-2 w-screen ">
+    <div class="flex pb-5 px-3 m-auto pt-5 border-t flex-row max-w-6xl ">
        <div class="mt-2">Copyright © <strong> NENASAL d.o.o </strong> 2020 All Rights Reserved. Powered by <strong> NENASAL </strong></div>
   </div>
 </div>
