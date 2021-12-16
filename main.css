@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
-  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .first-wrapper {
@@ -13,12 +14,6 @@ body {
   font-size: 18px;
   color: #656565;
   letter-spacing: 1px;
-}
-
-.shopping-cart {
-  margin-left: 277;
-  width: 563;
-  height: 696;
 }
 
 input[type='number']::-webkit-inner-spin-button,
