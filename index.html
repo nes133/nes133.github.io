@@ -12,11 +12,11 @@
     </head>
 
     <body>
-      <div class="first-wrapper w-screen">
+      <div class="first-wrapper overflow-y-none">
         <!-- nav-bar -->
-        <nav class="nav-left flex items-center py-4 ml-32">
+        <nav class="nav-left flex items-center py-4 ml-4 xl:ml-32">
                 <img src="./images/ihave.png" alt="logo"/>
-                <ul class="nav-center hidden md:flex flex-1 justify-center items-center gap-12 mx-12 mt-8">
+                <ul class="nav-center hidden xl:flex flex-1 justify-center items-center gap-12 mx-12 mt-8">
                     <li class="cursor-pointer"> POČETNA </li>
                     <li class="cursor-pointer"> PROIZVODI </li>
                     <li class="cursor-pointer"> RASPRODAJA </li>
@@ -24,63 +24,90 @@
                     <li class="cursor-pointer"> KONTAKT </li>
                 </ul>
                 <div class="nav-right flex justify-end items-center mt-8 gap-8 mx-12 cursor-pointer pl-12 mr-40">
-               <img src="./images/surface1.svg" alt="search" />
-               <img src="./images/shopping-cart.svg" alt="cart" />
-               <img src="./images/Group 11.svg" alt="menu" />
+               <img src="./images/surface1.svg" alt="search" class="hidden xl:flex"/>
+               <img src="./images/shopping-cart.svg" alt="cart" class="hidden xl:flex" />
+               <img src="./images/Group 11.svg" alt="menu" class="ml-4 md:ml-72 xl:ml-0" />
             </div>
         </nav>
-
-        <!-- left panel -->
-        <div class="left-panel justify-start items-start flex-col absolute md:ml-32 sm:ml-16 ml-2 mt-56 sm:mt-32">
+        <!-- left panel 
+        <div class="left-panel justify-start items-start flex-col absolute md:ml-32 sm:ml-16 ml-2 mt-80 sm:mt-32">
           <img src="images/Group 23.png" class="cursor-pointer my-4 w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 md:h-full md:w-full" alt="1st" />
           <img src="images/Mask Group 4.png" class="cursor-pointer w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 md:h-full md:w-full" alt="1st" />
           <img src="images/Mask Group 3.png" class="cursor-pointer my-4 w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 md:h-full md:w-full" alt="1st" />
           <img src="images/Mask Group 2.png" class="cursor-pointer w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 md:h-full md:w-full" alt="1st" />
         </div>
+        
+      -->
+        <!-- left panel -->
+        <div class="left-panel justify-start items-start flex-col absolute xl:ml-32 sm:ml-16 ml-2 mt-0 sm:mt-32 mt-80">
+          <img src="images/Group 23.png" class="cursor-pointer my-4 w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 xl:h-full xl:w-full" alt="1st" />
+          <img src="images/Mask Group 4.png" class="cursor-pointer w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 xl:h-full xl:w-full" alt="1st" />
+          <img src="images/Mask Group 3.png" class="cursor-pointer my-4 w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 xl:h-full xl:w-full" alt="1st" />
+          <img src="images/Mask Group 2.png" class="cursor-pointer w-1/6 h-1/6 sm:h-2/4 sm:w-2/4 xl:h-full xl:w-full" alt="1st" />
+        </div>
+
+
+        <!--
+        <div class="flex font-sans mt-16">
+          <div class="shopping-cart flex-none relative">
+            <img src="./images/Mask Group 6.png" alt="wifi headset" class="absolute inset-0 w-1/6 h-1/6 sm:w-2/4 sm:h-2/4 md:w-full md:h-full mt-72 sm:mt-16 md:mt-0 sm:-ml-32 -ml-56 md:ml-8 object-cover rounded-lg" />
+          </div>
+          <div class="wrapper md:ml-44 w-2/5 md:w-full -ml-96">
+          <form class="flex-auto p-6">
+              <div class="stars flex-auto -ml-72 sm:ml-0">
+                  <div class="flex items-center mt-2 mb-4 -ml-44 sm:ml-0">
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                  </div>
+                </div>  -->
 
 
         <!-- shopping-cart -->
-        <div class="flex font-sans mt-16">
-            <div class="shopping-cart flex-none relative">
-              <img src="./images/Mask Group 6.png" alt="wifi headset" class="absolute inset-0 w-1/6 h-1/6 sm:w-2/4 sm:h-2/4 md:w-full md:h-full mt-52 sm:mt-16 md:mt-0 sm:-ml-32 -ml-56 md:ml-8 object-cover rounded-lg" />
-            </div>
-            <div class="wrapper md:ml-44 w-2/5 md:w-full -ml-96">
-            <form class="flex-auto p-6">
-                <div class="stars flex-auto">
-                    <div class="flex items-center mt-2 mb-4">
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
+        <div class="sc flex font-sans mt-16 ml-8">
+          <div class="shopping-cart flex-none relative">
+            <img src="./images/Mask Group 6.png" alt="wifi headset" class="absolute w-1/6 h-1/6 sm:w-2/4 sm:h-2/4 xl:w-full xl:h-full mt-72 sm:mt-16 lg:mt-0 sm:-ml-32 -ml-56 xl:ml-8 rounded-lg" />
+          </div>
+          <div class="wrapper xl:ml-44 w-2/5 -ml-96">
+          <form class="flex-auto p-6">
+              <div class="stars flex-auto -ml-80 sm:ml-0 -mt-10 xl:mt-0">
+                  <div class="flex items-center mt-2 mb-4 -ml-44 sm:ml-0">
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                    <svg class="mx-1 w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
                   </div>
-              <div class="text-wrapper flex flex-wrap -ml-72 sm:ml-0">
-                 <!-- right panel -->
-                <h1 class="text-wrapper-h1 flex -ml-44 sm:ml-0">
-                  A18 Wireless headset
-                </h1>
-                <div class="text-wrapper-p w-full flex-none mt-2 order-1">
-                 <p>Large-size earmuffs that could cover the whole ears, paired with <br> thick, soft earmuffscan make it comfortable to immerse in music <br> for a long time.</p>
-                  </div>
-              </div>
-            <div class="flex flex-auto my-2 -ml-96 mt-20 sm:mt-0 sm:-ml-60 md:ml-0">
-                <div class="price flex-none mt-2 order-1 -ml-24 sm:ml-0">
-                    41,99 KM
                 </div>
-              <div class="custom-number-input order-2 h-10 w-32 ml-10 mt-4">
-                <div class="flex flex-row h-12 w-full border-solid rounded relative bg-transparent rounded border border-grey-600 mt-2">
-                  <button data-action="decrement" type="button" class="hover:text-white-700 hover:bg-white-400 h-full w-20 rounded-l cursor-pointer outline-none">
-                    <span class="m-auto text-2xl font-thin">−</span>
+              </form>
+              <div class="text-wrapper flex flex-wrap -ml-72 sm:ml-0">
+                <!-- right panel -->
+               <h1 class="text-wrapper-h1 w-screen -ml-44 sm:ml-0">
+                 A18 Wireless headset
+               </h1>
+               <div class="text-wrapper-p w-screen w-40 mt-2 order-1">
+                <p>Large-size earmuffs that could cover the whole ears, paired with <br> thick, soft earmuffscan make it comfortable to immerse in music <br> for a long time.</p>
+                 </div>
+             </div>
+           <div class="flex flex-auto my-2 -ml-96 mt-10 sm:mt-0 sm:-ml-60 xl:ml-0">
+               <div class="price flex-none mt-2 order-1 -ml-24 sm:ml-0">
+                   41,99 KM
+               </div>
+                <div class="custom-number-input order-2 h-10 w-32 ml-10 mt-4">
+                  <div class="flex flex-row h-12 w-full border-solid rounded relative bg-transparent rounded border border-grey-600 mt-2">
+                    <button data-action="decrement" type="button" class="hover:text-white-700 hover:bg-white-400 h-full w-20 rounded-l cursor-pointer outline-none">
+                      <span class="m-auto text-2xl font-thin">−</span>
+                    </button>
+                    <input type="number" class="outline-none focus:outline-none text-center w-full bg-white-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-white-700  outline-none" name="custom-input-number" value="0"></input>
+                  <button data-action="increment" type="button" class="bg-white-300 text-white-600 hover:text-white-700 hover:bg-white-400 h-full w-20 rounded-r cursor-pointer">
+                    <span class="m-auto text-2xl font-thin">+</span>
                   </button>
-                  <input type="number" class="outline-none focus:outline-none text-center w-full bg-white-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-white-700  outline-none" name="custom-input-number" value="0"></input>
-                <button data-action="increment" type="button" class="bg-white-300 text-white-600 hover:text-white-700 hover:bg-white-400 h-full w-20 rounded-r cursor-pointer">
-                  <span class="m-auto text-2xl font-thin">+</span>
-                </button>
+                </div>
               </div>
-            </div>
         </div>
-              <div class="flex space-x-4 mb-5 text-sm font-medium mt-4 -ml-64 sm:-ml-80 md:ml-0">
+              <div class="flex space-x-4 mb-5 text-sm font-medium mt-4 -ml-64 sm:-ml-80 xl:ml-0">
                 <div class="btn flex-auto flex space-x-4">
                   <button class="btn-bn mr-4 h-16 w-24 sm:w-52 font-semibold rounded bg-orange-500 text-white -ml-40 sm:ml-0" type="submit">
                     Kupi
@@ -90,38 +117,40 @@
                   </button>
                 </div>
               </div>
-              <div class="notes -ml-80 md:ml-0">
-              <img src="images/user.svg" alt="icon" class="-ml-24 sm:ml-0" />
-              <span class="text-sm text-gray-500">
-                Trenutno 18 osoba gleda ovaj proizvod. <br>
-              </span>
-              <div class="mt-2"></div>
-              <img src="images/surface1-2.svg" alt="icon" class="-ml-24 sm:ml-0" />
-              <span class="text-sm text-gray-500">
-                Proizvod je dostupan na lageru.
-              </span>    
             </div>
-            </form>
           </div>
-          <!-- right panel -->
+          <div class="signa xl:float-right float-left ml-20 md:ml-40 xl:ml-0 ml-4 mr-0 xl:mr-56">
+          <div class="notes flex">
+            <img src="images/user.svg" alt="icon" />
+            <span class="text-sm text-gray-500 mr-0 xl:mr-96">
+              Trenutno 18 osoba gleda ovaj proizvod. <br>
+            </span>
+          </div>
+            <div class="mt-2 flex">
+            <img src="images/surface1-2.svg" alt="icon"/>
+            <span class="text-sm text-gray-500">
+              Proizvod je dostupan na lageru.
+            </span>  
+          </div>  
+        </div>
+          <!-- right panel
          <div class="right-panel flex justify-end items-center flex-col flex-wrap relative mb-80 mr-48">
           <img src="images/Group 17.svg" class="cursor-pointer my-3" width="50" height="50" alt="1st" />
           <img src="images/Group 18.svg" class="cursor-pointer" width="50" height="50" alt="1st" />
           <img src="images/Group 19.svg" class="cursor-pointer my-3" width="50" height="50" alt="1st" />
-        </div>
+        </div> -->
       </div>
-    </div>
 
       <!-- second-wrapper -->
-    <div class="second-wrapper w-screen flex flex-wrap">
-      <div class="sw-heading ml-20 md:ml-40 mt-72">
-      <div class="text-list flex justify-start items-center">
-        <h1 class="mr-36 cursor-pointer">OPIS</h1>
-        <h1 class="cursor-pointer" >SPECIFIKACIJE</h1>
-        <h1 class="ml-36 cursor-pointer">OSTALO</h1>
+    <div class="second-wrapper w-screen flex flex-wrap overflow-y-none">
+      <div class="sw-heading ml-1 sm:ml-10 lg:ml-20">
+      <div class="text-list flex justify-start items-center w-80 mt-60 -ml-10 lg:ml-0">
+        <h1 class=" cursor-pointer">OPIS</h1>
+        <h1 class="cursor-pointer mx-4 sm:mx-32" >SPECIFIKACIJE</h1>
+        <h1 class=" cursor-pointer">OSTALO</h1>
       </div>
-      <div class="rectangle mt-6"></div>
-      <div class="sw-text mt-6">
+      <div class="rectangle mt-6 w-80 sm:w-full"></div>
+      <div class="sw-text mt-6 w-screen sm:w-full">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.<br></p>
         <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
@@ -131,19 +160,19 @@
 
 
     <!-- third-wrapper-->
-    <div class="third-wrapper w-screen flex flex-wrap justify-end items-end">
-      <div class="tw-full ml-40 sm:ml-20 mr-4 sm:mr-10 lg:mr-80 lg:ml-0">
-      <div class="tw-text">
+   <div class="third-wrapper xl:w-screen flex flex-col justify-end items-end overflow-y-none">
+      <div class="tw-full md:mr-80">
+      <div class="tw-text ml-12 xl:ml-0">
           <h1 class="tw-text-h1 tracking mb-4">Iskoristiti momente uživanja,<br> na pravi način</h1>
-          <p class="tw-text-p mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="tw-text-p mb-0 xl:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
-    <div class="tw-btn flex-col mb-64">
+    <div class="tw-btn flex-col mb-28 xl:mb-64">
       <div class="flex space-x-4 mb-5 text-sm font-medium mt-4">
-        <div class="btn flex-auto flex space-x-4">
-          <button class="btn-bn mr-4 h-16 w-52 font-semibold rounded bg-orange-500 text-white" type="submit">
+        <div class="btn flex-auto flex space-x-4 ml-10 xl:ml-0">
+          <button class="btn-bn mr-4 h-16 w-32 xl:w-52 font-semibold rounded bg-orange-500 text-white" type="submit">
             Kupi
           </button>
-          <button class="btn-atb h-16 w-60 font-semibold rounded border border-orange-400 text-orange-400 font-bold" type="button">
+          <button class="btn-atb h-16 w-36 xl:w-60 font-semibold rounded border border-orange-400 text-orange-400 font-bold" type="button">
             Dodaj u korpu
           </button>
         </div>
@@ -153,10 +182,10 @@
   </div>
 
   <!-- fourth-wrapper-->
-  <div class="fourth-wrapper w-screen">
+  <div class="fourth-wrapper w-screen overflow-y-none">
     <div class="fw-text-wrapper flex flex-wrap justify-center items-center">
-      <div class="fw-txt-wrapper">
-        <h1 class="flex justify-center mt-32 mb-4">Povezani proizvodi</h1>
+      <div class="fw-txt-wrapper ml-4 sm:ml-0">
+        <h1 class="flex justify-center -ml-8 sm:ml-0 mt-32 mb-4">Povezani proizvodi</h1>
         <p>Large-size earmuffs that could cover the whole ears, paired with thick, soft <br> earmuffscan make it comfortable to immerse in music for a long time.</p>
       </div>
       <div class="item-list flex justify-center relative ml-36 mr-36 pt-16">
@@ -170,12 +199,12 @@
           <h1 class="my-4">Casque Bluetooth DeFunc</h1>
           <span>39,99 KM</span>
       </div>
-      <div class="img-3 flex flex-col justify-center items-center">
+      <div class="img-3 hidden sm:flex flex-col justify-center items-center">
           <img src="images/Mask Group 10.png" class="cursor-pointer my-3" alt="1st" />
           <h1 class="my-4">Casque Bluetooth DeFunc</h1>
           <span>39,99 KM</span>
       </div>
-      <div class="img-4 flex flex-col justify-center items-center">
+      <div class="img-4 hidden sm:flex flex-col justify-center items-center">
           <img src="images/Mask Group 11.png" class="cursor-pointer my-3" alt="1st" />
           <h1 class="my-4">Casque Bluetooth DeFunc</h1>
           <span>39,99 KM</span>
@@ -186,16 +215,16 @@
 
   <!-- fifth-wrapper -->
   <div class="fifth-wrapper w-screen">
-    <div class="fw-text-wrapper relative -ml-56 md:ml-0">
-      <div class="fw-txt-wrapper items-center pt-32 text-left ml-80 md:ml-0 md:text-center">
+    <div class="fw-text-wrapper relative -ml-56 xl:ml-0">
+      <div class="fw-txt-wrapper items-center pt-32 text-left ml-60 xl:ml-0 md:text-center">
         <h1>Gdje želite da Vam </h1>
         <h1>dostavimo proizvod?!</h1>
       </div>
-      <div class="fw-lf-side mt-36 mr-96 md:ml-72">
+      <div class="fw-lf-side mt-36 mr-96 xl:ml-72">
         <img src="./images/Mask Group 12.png" class="float-left" alt="headset" />
       </div>
-      <div class="fw-rht-side w-full -mt-28 md:mt-28 ">
-        <form class="fw-form flex flex-col ml-60 md:ml-0 w-56 md:w-96">
+      <div class="fw-rht-side w-full -mt-28 xl:mt-28 ">
+        <form class="fw-form flex flex-col ml-60 xl:ml-0 w-56 xl:w-96">
         <label for="fname">Ime i prezime</label>
         <input type="text" class="h-12" id="fname" name="firstname" />
         <label for="street" class="mt-4">Ulica i broj</label>
@@ -210,36 +239,36 @@
         <input type="message" class="h-40" id="msg" name="msg" />
       </form>
       <div class="tw-btn flex-col mt-8 md:ml-0 ml-20">
-        <div class="flex space-x-4 mb-5 text-sm font-medium mt-4">
-          <div class="btn flex-auto flex space-x-4 ml-40 md:ml-80 mt-10 md:mt-0 md:ml-0">
-            <button class="btn-bn w-56 md:w-96 h-16 font-semibold rounded bg-orange-500 text-white" type="submit">
+        <div class="flex-none space-x-4 mb-5 text-sm font-medium mt-4">
+          <div class="btn flex-none space-x-4 ml-40 xl:ml-80 2xl:ml-0 mt-10 md:mt-0 md:ml-0">
+            <button class="btn-bn w-56 xl:w-96 h-16 font-semibold rounded bg-orange-500 text-white" type="submit">
               Kupi
             </button>
           </div>
         </div>
       </div>
-      <div class="tw-notes">
-      <div class="notes float-right">
-        <img src="images/surface1-2.svg" alt="icon" />
-        <span class="text-sm text-gray-500">
+      </div>
+    </div>
+    <div class="tw-notes">
+      <div class="notes flex justify-end mt-28 xl:mt-0">
+        <img src="images/surface1-2.svg" class="mr-2" />
+        <span class="text-sm text-gray-500 flex-none">
          Vasa kupovina je sigurna.
         </span>    
       </div>
       </div>
-      </div>
-    </div>
   </div>
 
   <!-- sixth-wrapper -->
   <div class="sixth-wrapper w-screen">
-    <div class="sixth-wrapper-cols flex items-center -pt-8 md:pt-16">
+    <div class="sixth-wrapper-cols flex items-center -pt-16 xl:pt-32">
     <div class="m-auto flex flex-wrap justify-start">
       <div class="sw-fl float-left p-8">
          <div class="uppercase font-bold">Kontakt i podrska</div>
          <span class="my-3 block">Adresa: Prote Nikole Kostića bb <span class="p-1"></span></span>
          <span class="my-3 block"> Email: info@simel-bih.com <span class="p-1"></span></span> 
          <span class="my-3 block">Skype: simel-bih <span class="p-1"></span></span>
-         <div class="info flex">
+         <div class="info flex -mt-4 sm:mt-0">
         <img src="images/headphones.svg" class="cursor-pointer my-3" width="50" height="50" alt="1st" />
         <div class="info-col flex flex-col ml-2">
          <span class="pozovi mt-3 block">Pozovite nas! <span class="p-1"></span></span>
@@ -248,7 +277,7 @@
         </div>
         </div>
      </div>
-      <div class="sw-fr m-auto hidden lg:flex flex-wrap justify-end mr-96">
+      <div class="sw-fr m-auto hidden lg:flex flex-wrap justify-end mr-96 sm:mt-16 xl:mt-0">
          <div class="p-5 w-48 ">
         <div class="uppercase font-bold">O nama</div>
          <span class="my-3 block">Dostava <span class="p-1"></span></span>
@@ -273,7 +302,7 @@
       </div>
    </div>
   </div>
-  <div class="tribute pt-2 w-screen ">
+  <div class="tribute pt-2 w-screen">
     <div class="flex pb-5 px-3 m-auto pt-5 border-t flex-row max-w-6xl ">
        <div class="mt-2">Copyright © <strong> NENASAL d.o.o </strong> 2020 All Rights Reserved. Powered by <strong> NENASAL </strong></div>
   </div>
