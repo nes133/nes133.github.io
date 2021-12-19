@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  max-width: 100vw;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -56,26 +56,13 @@ input[type='number']::-webkit-outer-spin-button {
 
 .second-wrapper {
   position: relative;
-  height: 885px;
   background-image: url(./images/Mask\ Group\ 7.png);
 }
 
 .sw-heading {
-  width: 606px;
-  height: 61px;
-}
-
-.text-list {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
   color: #000000;
-  padding-left: 40px;
-}
-
-.rectangle {
-  width: 606px;
-  height: 1px;
-  background-color: #656565;
 }
 
 .sw-text {
@@ -85,18 +72,17 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .third-wrapper {
-  height: 887;
   position: relative;
   background-image: url(./images/Mask\ Group\ 13.png);
 }
 
-.tw-text-h1 {
+.tw-heading {
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
   color: #000000;
 }
 
-.tw-text-p {
+.tw-text {
   color: #656565;
   font-size: 18px;
   font-family: 'Roboto';
